@@ -52,7 +52,7 @@ module "kubernetes" {
 
   cluster_name = "gelugu"
 
-  ssh_public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDdZ7dUe3tzhsSGOYNyoftopdd+UDOl93fFQ8hpfbCcD4wSmHAPjUOH11sknh4cuHQ+VINGtBkGYBkGWODRF63X0lpKyY30qSpX99IFDhNBoLUIoPjO//PU7Q+hPBimEoAkoM8F9G9Ztw8y7IVWI0MgKnuwM7SQbYNe8XMm3t1QQTf4L9NChVJEFoe6gIPz7TIKIYBu9OvrLm63jWqFds1CuWmQm/qiimkgCVndQ0RPgpDy3WQhud0suMQD1n4giRo4W8jqap5MDnFV4B//Dy/zHGtgs7bj23ppq2HASvAOzyGCLkQSNO3FRbSpsAqnQZBumZ1faAyl3kvN0oxJ8vBVGEnWDSQWfaJHE7F+xwYzTjnv/iu0mHYBDmS+27Ri74mERqHOiu4oTEaeB3gzlvkMHEN9WPzUJf6UhbNSoqazUwtdVMsBxZ94F4St89LCZMdANNJgWzNHGSafce2edr2iH/en/6zifdkUbdkxkNnNtLgk6d5kwidIdCJZYQJFBQE= gelugu@Mikhails-MBP"
+  ssh_public_key = "your@ssh.key"
 
   master_instance_type = "t3.small"
   master_count         = 2
