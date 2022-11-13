@@ -18,7 +18,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "gelugu-terraform-state"
+    bucket = "your-terraform-state"
     key    = "k8s-aws.tfstate"
     region = "eu-north-1"
   }
