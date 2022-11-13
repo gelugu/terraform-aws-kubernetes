@@ -33,7 +33,7 @@ resource "aws_vpc" "main" {
   enable_dns_hostnames = true
   enable_dns_support   = true
   tags                 = {
-    Name = "gelugu"
+    Name = "k8s"
   }
 }
 ```
@@ -50,7 +50,7 @@ module "kubernetes" {
   vpc_id        = aws_vpc.main.id 
   subnet_netnum = 1
 
-  cluster_name = "gelugu"
+  cluster_name = "k8s"
 
   ssh_public_key = "your@ssh.key"
 
