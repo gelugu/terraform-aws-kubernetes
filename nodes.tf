@@ -11,7 +11,7 @@ resource "aws_instance" "master" {
 
   key_name = aws_key_pair.main.key_name
 
-  user_data                   = count.index > 0 ? file("./init-controller.sh") : file("./init-controller-main.sh")
+  user_data                   = count.index > 0 ? file("${path.module}/init-controller.sh") : file("${path.module}/init-controller-main.sh")
   user_data_replace_on_change = true
   associate_public_ip_address = true
 
@@ -42,7 +42,7 @@ resource "aws_instance" "worker" {
 
   key_name = aws_key_pair.main.key_name
 
-  user_data = file("./init-worker.sh")
+  user_data = file("${path.module}/init-worker.sh")
   user_data_replace_on_change = true
   associate_public_ip_address = true
 
